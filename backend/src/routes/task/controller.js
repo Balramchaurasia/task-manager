@@ -10,7 +10,7 @@ const createtask = async (req, res) => {
       const response = { status: 400, message: "fill all firelds" };
       return sendResponse(req, res, response);
     }
-    const task = new Task(projectId,title,status);
+    const task = new Task({projectId,title,status});
     await task.save();
     if (!task) {
       const response = { status: 500, message: "Tasks not created" };

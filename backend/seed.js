@@ -20,6 +20,7 @@ const seedData = async () => {
     await Task.deleteMany();
     const hashedPassword = await bcrypt.hash("Test@123", 10);
     const user = await User.create({
+      name:"Test",
       email: "test@example.com",
       password: hashedPassword,
     });
