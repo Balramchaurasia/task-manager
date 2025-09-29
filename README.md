@@ -51,14 +51,14 @@ It provides user authentication, project management, and task tracking features.
 ## Installation
 
 ### Backend Setup
-- Navigate to backend folder
+- Navigate to backend folder:
  -  cd backend
  -  npm install
  -  Create .env file and set :DB_URL=mongodb://127.0.0.1:27017/project_management
  -   npm run seed
   -  npm start
 ### Backend Setup
--Navigate to backend folder
+- Navigate to backend folder:
  -  cd frontend
  -  npm install
   - npm start
