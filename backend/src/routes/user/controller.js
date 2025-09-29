@@ -37,7 +37,7 @@ const userLogin = async (req, res) => {
     }
     const token = jwt.sign(
       { userId: user._id, role: user.role },
-      "JWT_SECRET_KEY",{expiresIn:'30min'}
+      "JWT_SECRET_KEY",{expiresIn:'10min'}
     );
     const response = {
       status: 200,
